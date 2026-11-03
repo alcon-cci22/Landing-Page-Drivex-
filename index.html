@@ -1,0 +1,1039 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DRIVE X | Renta de Autos</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+          <link rel="stylesheet" href="estilos.css">
+</head>
+    
+<body>
+    
+      <!-- =========================================================
+     HEADER
+========================================================= -->
+        
+<header id="header">
+
+    <nav class="nav">
+
+        <a href="#inicio" class="logo">
+            DRIVE<span>X</span>
+        </a>
+
+        <div class="nav-menu" id="navMenu">
+
+            <a href="#inicio" class="nav-link">
+                Inicio
+            </a>
+
+            <a href="#vehiculos" class="nav-link">
+                Vehículos
+            </a>
+
+            <a href="#servicios" class="nav-link">
+                Servicios
+            </a>
+
+            <a href="#nosotros" class="nav-link">
+                Nosotros
+            </a>
+
+            <a href="#contacto" class="nav-link">
+                Contacto
+            </a>
+
+            <a href="#reservar" class="nav-button">
+                RESERVAR
+            </a>
+
+        </div>
+
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </nav>
+
+</header>
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero" id="inicio">
+
+    <div class="container">
+
+        <div class="hero-content reveal">
+
+            <div class="hero-label">
+                <span></span>
+                RENTA DE AUTOS PREMIUM
+            </div>
+
+            <h1>
+                TU PRÓXIMO
+                <span>VIAJE</span>
+                COMIENZA AQUÍ.
+            </h1>
+
+            <p class="hero-description">
+                Encuentra el vehículo perfecto para cada aventura.
+                Reserva de manera rápida, sencilla y segura.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#reservar" class="btn btn-primary">
+                    RESERVAR AHORA
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="#vehiculos" class="btn btn-outline">
+                    VER VEHÍCULOS
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- AUTOMÓVIL PRINCIPAL -->
+
+    <img class="hero-car" src="Auto.png" alt="Auto deportivo">
+
+    <div class="hero-line"></div>
+
+    <div class="hero-scroll">
+        SCROLL PARA EXPLORAR
+    </div>
+
+</section>
+
+<!-- =========================================================
+     BOOKING
+========================================================= -->
+
+
+        <section class="booking-wrapper" id="reservar">
+
+    <div class="container">
+
+        <div class="booking">
+
+            <div class="booking-field">
+
+                <label>
+                    Ubicación
+                </label>
+
+                <input type="text" placeholder="Ciudad o aeropuerto">
+                
+
+            </div>
+
+
+            <div class="booking-field">
+
+                <label>
+                    Recogida
+                </label>
+
+                <input type="date">
+
+            </div>
+
+
+            <div class="booking-field">
+
+                <label>
+                    Devolución
+                </label>
+
+                <input
+                    type="date">
+
+            </div>
+
+
+            <button class="btn btn-primary" onclick="buscarAuto()">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                BUSCAR
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     VEHÍCULOS
+========================================================= -->
+
+          <section class="section vehicles" id="vehiculos">
+
+    <div class="container">
+
+        <div class="section-header reveal">
+
+            <span class="section-label">
+                Nuestra flota
+            </span>
+
+            <h2 class="section-title">
+                Elige tu próximo auto.
+            </h2>
+
+            <p class="section-description">
+                Vehículos seleccionados para ofrecerte comodidad,
+                seguridad y una experiencia de conducción excepcional.
+            </p>
+
+        </div>
+
+
+        <div class="vehicle-grid">
+
+
+            <!-- AUTO 1 -->
+
+            <article class="vehicle-card reveal">
+
+                <div class="vehicle-image">
+
+                    <img src="gris.jpg" alt="SUV">
+                    
+
+                </div>
+
+                <div class="vehicle-info">
+
+                    <span class="vehicle-type">
+                        SUV
+                    </span>
+
+                    <h3>
+                        Range Rover
+                    </h3>
+
+                    <div class="vehicle-details">
+
+                        <span>
+                            <i class="fa-solid fa-user"></i>
+                            5 pasajeros
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-gears"></i>
+                            Automático
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-gas-pump"></i>
+                            Gasolina
+                        </span>
+
+                    </div>
+
+                    <div class="vehicle-bottom">
+
+                        <div class="price">
+                            $1,850
+                            <small>/ día</small>
+                        </div>
+
+                        <a href="#contacto" class="vehicle-link">
+                            VER DETALLES →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- AUTO 2 -->
+
+            <article class="vehicle-card reveal">
+
+                <div class="vehicle-image">
+
+                    <img src="rojo.jpg" alt="Auto deportivo">
+                    
+
+                </div>
+
+                <div class="vehicle-info">
+
+                    <span class="vehicle-type">
+                        DEPORTIVO
+                    </span>
+
+                    <h3>
+                        Porsche 911
+                    </h3>
+
+                    <div class="vehicle-details">
+
+                        <span>
+                            <i class="fa-solid fa-user"></i>
+                            2 pasajeros
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-gears"></i>
+                            Automático
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-gas-pump"></i>
+                            Gasolina
+                        </span>
+
+                    </div>
+
+                    <div class="vehicle-bottom">
+
+                        <div class="price">
+                            $3,500
+                            <small>/ día</small>
+                        </div>
+
+                        <a href="#contacto" class="vehicle-link">
+                            VER DETALLES →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- AUTO 3 -->
+
+            <article class="vehicle-card reveal">
+
+                <div class="vehicle-image">
+
+                    <img src="azul.jpg" alt="Chevrolet deportivo">
+                    
+
+                </div>
+
+                <div class="vehicle-info">
+
+                    <span class="vehicle-type">
+                        PREMIUM
+                    </span>
+
+                    <h3>
+                        Chevrolet Camaro
+                    </h3>
+
+                    <div class="vehicle-details">
+
+                        <span>
+                            <i class="fa-solid fa-user"></i>
+                            4 pasajeros
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-gears"></i>
+                            Automático
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-gas-pump"></i>
+                            Gasolina
+                        </span>
+
+                    </div>
+
+                    <div class="vehicle-bottom">
+
+                        <div class="price">
+                            $2,200
+                            <small>/ día</small>
+                        </div>
+
+                        <a href="#contacto" class="vehicle-link">
+                            VER DETALLES →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     SERVICIOS
+========================================================= -->
+
+   <section class="section services" id="servicios">
+
+    <div class="container">
+
+        <div class="section-header reveal">
+
+            <span class="section-label">
+                ¿Por qué nosotros?
+            </span>
+
+            <h2 class="section-title">
+                Todo pensado para tu viaje.
+            </h2>
+
+            <p class="section-description">
+                Queremos que rentar un auto sea rápido,
+                sencillo y sin complicaciones.
+            </p>
+
+        </div>
+
+
+        <div class="service-grid">
+
+
+            <div class="service-card reveal">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-calendar-check"></i>
+                </div>
+
+                <h3>
+                    Reserva sencilla
+                </h3>
+
+                <p>
+                    Selecciona tu vehículo, fechas y ubicación
+                    en pocos pasos.
+                </p>
+
+            </div>
+
+
+            <div class="service-card reveal">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+
+                <h3>
+                    Viaja seguro
+                </h3>
+
+                <p>
+                    Vehículos revisados y preparados para
+                    acompañarte en cada recorrido.
+                </p>
+
+            </div>
+
+
+            <div class="service-card reveal">
+
+                <div class="service-icon">
+                    <i class="fa-solid fa-headset"></i>
+                </div>
+
+                <h3>
+                    Atención 24/7
+                </h3>
+
+                <p>
+                    Nuestro equipo está disponible para
+                    ayudarte cuando lo necesites.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     STATS
+========================================================= -->
+
+<section class="stats">
+
+    <div class="container">
+
+        <div class="stats-grid">
+
+
+            <div class="stat reveal">
+
+                <div
+                    class="stat-number"
+                    data-target="500">
+                    0
+                </div>
+
+                <p>
+                    Clientes satisfechos
+                </p>
+
+            </div>
+
+
+            <div class="stat reveal">
+
+                <div
+                    class="stat-number"
+                    data-target="35">
+                    0
+                </div>
+
+                <p>
+                    Vehículos disponibles
+                </p>
+
+            </div>
+
+
+            <div class="stat reveal">
+
+                <div
+                    class="stat-number"
+                    data-target="98">
+                    0
+                </div>
+
+                <p>
+                    % satisfacción
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     TESTIMONIOS
+========================================================= -->
+
+   <section class="section testimonials" id="nosotros">
+
+    <div class="container">
+
+        <div class="section-header reveal">
+
+            <span class="section-label">
+                Opiniones
+            </span>
+
+            <h2 class="section-title">
+                Lo que dicen nuestros clientes.
+            </h2>
+
+        </div>
+
+
+        <div class="testimonial-grid">
+
+
+            <article class="testimonial reveal">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "Excelente servicio. El automóvil estaba
+                    impecable y todo el proceso de reservación
+                    fue muy sencillo."
+                </p>
+
+                <div class="customer">
+
+                    <div class="customer-avatar">
+                        CM
+                    </div>
+
+                    <div>
+                        <h4>
+                            Carlos Martínez
+                        </h4>
+
+                        <span>
+                            Cliente verificado
+                        </span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="testimonial reveal">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "La atención fue excelente y el vehículo
+                    superó mis expectativas. Sin duda volvería
+                    a rentar con ellos."
+                </p>
+
+                <div class="customer">
+
+                    <div class="customer-avatar">
+                        AL
+                    </div>
+
+                    <div>
+                        <h4>
+                            Ana López
+                        </h4>
+
+                        <span>
+                            Cliente verificado
+                        </span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="testimonial reveal">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "Muy buena experiencia. La entrega fue
+                    rápida y el automóvil estaba en excelentes
+                    condiciones."
+                </p>
+
+                <div class="customer">
+
+                    <div class="customer-avatar">
+                        JR
+                    </div>
+
+                    <div>
+                        <h4>
+                            Jorge Ramírez
+                        </h4>
+
+                        <span>
+                            Cliente verificado
+                        </span>
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     CONTACTO
+========================================================= -->
+
+<section class="section contact" id="contacto">
+
+    <div class="container">
+
+        <div class="contact-wrapper">
+
+
+            <div class="contact-info reveal">
+
+                <span class="section-label">
+                    Contacto
+                </span>
+
+                <h2>
+                    ¿Listo para comenzar tu viaje?
+                </h2>
+
+                <p>
+                    Envíanos tus datos y uno de nuestros
+                    asesores se pondrá en contacto contigo.
+                </p>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div>
+                        <h4>
+                            Ubicación
+                        </h4>
+
+                        <p>
+                            Ciudad de México, México
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+
+                    <div>
+                        <h4>
+                            Teléfono
+                        </h4>
+
+                        <p>
+                            +52 55 1234 5678
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <div>
+                        <h4>
+                            Email
+                        </h4>
+
+                        <p>
+                            contacto@drivex.com
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <form
+                class="contact-form reveal"
+                id="contactForm"
+            >
+
+                <div class="form-grid">
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Nombre
+                        </label>
+
+                        <input
+                            type="text"
+                            placeholder="Tu nombre"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            placeholder="correo@email.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Teléfono
+                        </label>
+
+                        <input
+                            type="tel"
+                            placeholder="+52"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Vehículo
+                        </label>
+
+                        <select>
+
+                            <option>
+                                Seleccionar vehículo
+                            </option>
+
+                            <option>
+                                Range Rover
+                            </option>
+
+                            <option>
+                                Porsche 911
+                            </option>
+
+                            <option>
+                                Chevrolet Camaro
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group full">
+
+                        <label>
+                            Mensaje
+                        </label>
+
+                        <textarea
+                            placeholder="¿En qué podemos ayudarte?">
+                        </textarea>
+
+                    </div>
+
+                </div>
+
+
+                <button type="submit" class="btn btn-primary">
+                
+
+                    ENVIAR SOLICITUD
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+                <div
+                    class="form-success"
+                    id="formSuccess"
+                >
+                    ✓ Solicitud enviada correctamente.
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+
+            <div class="footer-brand">
+
+                <a href="#inicio" class="logo">
+                    DRIVE<span>X</span>
+                </a>
+
+                <p>
+                    Tu camino comienza aquí.
+                    Encuentra el vehículo perfecto
+                    para tu próxima aventura.
+                </p>
+
+
+                <div class="socials">
+
+                    <a href="#" class="social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="social">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="social">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="#" class="social">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Empresa
+                </h4>
+
+                <a href="#nosotros">
+                    Nosotros
+                </a>
+
+                <a href="#vehiculos">
+                    Vehículos
+                </a>
+
+                <a href="#servicios">
+                    Servicios
+                </a>
+
+                <a href="#contacto">
+                    Contacto
+                </a>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Servicios
+                </h4>
+
+                <a href="#">
+                    Renta de autos
+                </a>
+
+                <a href="#">
+                    Reservaciones
+                </a>
+
+                <a href="#">
+                    Autos premium
+                </a>
+
+                <a href="#">
+                    Atención 24/7
+                </a>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Soporte
+                </h4>
+
+                <a href="#">
+                    Preguntas frecuentes
+                </a>
+
+                <a href="#">
+                    Términos
+                </a>
+
+                <a href="#">
+                    Privacidad
+                </a>
+
+                <a href="#">
+                    Ayuda
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 DRIVE X. Todos los derechos reservados.
+            </span>
+
+            <span>
+                Renta de autos premium
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
